@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background-image: radial-gradient(
+    circle 248px at center,
+    #16d9e3 0%,
+    #30c7ec 47%,
+    #46aef7 100%
+  );
   min-height: 100vh;
+}
+
+.head {
+  font-family: "Secular One", sans-serif;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+h1 {
+  margin-top: 1%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8a32e1;
+  border-radius: 1em;
+  width: 95%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgb(71, 71, 71);
+  margin: 10px;
+
+  max-width: 150vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-data {
+  font-size: 1.5rem;
+  margin: 5%;
+  color: white;
+}
+.strike {
+  text-decoration: line-through;
+}
+form {
+  display: flex;
+
+  margin-bottom: 1.5%;
+  border: none;
+  padding: 10px;
+}
+.btn-margin {
+  border: none;
+}
+.btn-wrap {
+  display: flex;
+  align-items: center;
 }
