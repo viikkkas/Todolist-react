@@ -7,7 +7,7 @@ const ListSingular = ({ data, onDel }) => {
   const [list_class, setListClass] = useState("list-data");
   function handleStrike() {
     if (list_class === "list-data strike") {
-      // setListClass("list-data");
+      setListClass("list-data");
       handleDelete();
     } else {
       setListClass("list-data strike");

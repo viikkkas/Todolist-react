@@ -4,8 +4,8 @@ import ListSingular from "./listSingular";
 const List = ({ list, onDel }) => {
   return (
     <div className="list">
-      {list.map((data) => (
-        <ListSingular data={data} onDel={onDel} key={data} />
+      {list.map((data, idx) => (
+        <ListSingular data={data} onDel={onDel} key={idx} />
       ))}
     </div>
   );
