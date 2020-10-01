@@ -5,7 +5,7 @@ const List = ({ list, onDel }) => {
   return (
     <div className="list">
       {list.map((data, idx) => (
-        <ListSingular data={data} onDel={onDel} key={idx} />
+        <ListSingular data={data} onDel={onDel} key={data} />
       ))}
     </div>
   );
